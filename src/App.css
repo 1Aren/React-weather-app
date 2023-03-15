@@ -1,0 +1,39 @@
+.WeatherBlock {
+    background-color: rgba(191, 176, 176, 0.5); 
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    color: #ffff;
+    text-align: center;
+}
+.nightMode {
+    background-color: rgb(53, 52, 52);
+    border: none;
+}
+/* .lop {
+    background-color: red;
+} */
+.temp h1 {
+    margin: 15px;
+}
+.mainBlock {
+    background-position: center;
+    position: absolute;
+    overflow: hidden;
+    -webkit-transition: background-image 1s ease-in-out;
+    transition: background-image 1s ease-in-out;
+    background: no-repeat center center/cover;
+}
+.otherInfoBLock h5 {
+    font-size: 16px;   
+}
+
+@media only screen and (max-width: 1024px) {
+    .WeatherBlock, .WeatherBlockNightMode{
+        display: flex;
+        flex-direction: column;
+    }
+    .otherInfoBLock {
+        margin-top: 10px;
+    }
+}
